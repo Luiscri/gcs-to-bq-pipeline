@@ -1,0 +1,22 @@
+{
+  "name": "process-raw",
+  "description": "An example pipeline that performs a dummy processing to the input file.",
+  "parameters": [
+    {
+      "name": "input_file",
+      "helpText": "Path of the file pattern glob to read from.",
+      "label": "Input Cloud Storage file",
+      "regexes": [
+        "^gs:\\/\\/[^\\n\\r]+$"
+      ]
+    },
+    {
+      "name": "output_prefix",
+      "helpText": "Path and filename prefix for writing output files.",
+      "label": "Output Cloud Storage file prefix",
+      "regexes": [
+        "^gs:\\/\\/[^\\n\\r]+$"
+      ]
+    }
+  ]
+}
